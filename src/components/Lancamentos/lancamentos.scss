@@ -1,0 +1,68 @@
+section{
+    text-align: center;
+}
+
+.lancamentos {
+    display: flex;
+    justify-content: space-around;
+    height: 65vh;
+    align-items: center;
+    flex-wrap: wrap;
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        width: 8vw;
+        gap: 10px;
+    }
+
+    .modelo {
+        width: clamp(180px, 25vw, 300px);
+        max-width: 100%;
+        height: auto;
+    }
+
+    .logica {
+        padding: 20px;
+        width: 30vw;
+        text-align: left;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        .btn{
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+        button {
+            border-radius: 100%;
+            border: none;
+        }
+
+        h4{
+            padding: 10px 0;
+        }
+    }
+
+    /* 🌟 MEDIA QUERY — tudo aqui dentro! */
+    @media (max-width: 768px) {
+
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        gap: 20px;
+
+        figure {
+            display: none;
+        }
+
+        .modelo {
+            width: 60vw;
+        }
+
+        .logica {
+            width: 80vw;
+            text-align: center;
+        }
+    }
+}
