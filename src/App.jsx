@@ -1,20 +1,20 @@
-// aqui importamos os arquivos
+import { useState } from "react";
 import Header from "./components/Header";
-import Banner from "./components/Banner"
+import Banner from "./components/Banner";
+import Looks from "./components/Looks";
 import Lancamentos from "./components/Lancamentos";
-import Produtos from "./components/Produtos";
+import Novidades from "./components/Novidades";
 import Footer from "./components/Footer";
 
-// Arquivo principal
-//para escrita do nome do componente funcional usamos sempre a primeira letra maiuscula, PascalCase
+
 function App() {
   return (
     <>
-      <Header />
-      <Banner imagem="./banner.png" alt="Banner inicial" />
-      <Produtos />
+     <Header />
+      <Banner />
+      <Looks/>
       <Lancamentos />
-      <Banner imagem="./banner2.png" alt="Banner inicial" />
+      <Novidades/>
       <Footer/>
     </>
   );

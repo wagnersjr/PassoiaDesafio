@@ -1,10 +1,14 @@
 import "./banner.scss";
+import banner from "../../assets/bannerPrincipal.png"
 
-function Banner({imagem, alt}){
-    return (
-        <section className="banner">
-            <img src={imagem} alt={alt} />
-        </section>
-    )
+
+
+function Banner() {
+  return (
+    <section className="banner">
+      <img src={banner} alt="Banner principal" />
+    </section>
+  );
 }
+
 export default Banner

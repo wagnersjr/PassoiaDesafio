@@ -1,46 +1,49 @@
-footer{
-    border-top: solid rgb(238, 230, 230);
-    margin-top: 40px;
+.footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(238, 230, 230);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 160px;
+  margin-left: 50px;
+
+  h4 {
+    margin-bottom: 15px;
+  }
+}
+
+.footer-atendimento {
+  ul {
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      font-weight: 300;
+      color: #2d2d2d;
+      padding: 4px 0;
+    }
+  }
+}
+
+.footer-pagamentos {
+  .icons-pagamento {
+    width: 32vw;
     display: flex;
     flex-wrap: wrap;
-    gap: 200px;
-    height: 30vh;
-    align-items: center;
-    margin-left: 50px;
+    gap: 25px;
 
-    h4 {
-            padding-bottom: 20px;
-        }
-
-    nav{
-        li{
-           list-style: none;
-           color: #2D2D2D;
-           font-weight: 300;
-           padding: 5px;
-        }
+    img {
+      width: 48px;
     }
-
+  }
 }
 
-.pagamento{
-    figure{
-        width: 30vw;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-
-        img{
-            width: 50px;
-        }
-    }
-}
-
-.redes{
-    figure{
-        width: 30vw;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-    }
+.footer-redes {
+  .social-icons {
+    width: 32vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
 }
