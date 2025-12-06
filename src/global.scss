@@ -11,3 +11,9 @@ body{
 h2{
     margin: 40px;
 }
+
+html {
+    overflow-x: hidden;
+   
+    scroll-behavior: smooth;
+}

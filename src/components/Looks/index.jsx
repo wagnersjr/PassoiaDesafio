@@ -13,19 +13,19 @@ import tendencia from "../../assets/tendencia.png";
 
       <section className="sectionBanners">
 
-        <div className="BannerDiv">
+        <div className="bannerDiv">
           <img src={labios} alt="" />
         </div>
 
-        <div className="BannerDiv">
+        <div className="bannerDiv">
           <img src={olhos} alt="" />
         </div>
 
-        <div className="BannerDiv">
-          <img src={rosto} alt="" />
+        <div className="bannerDiv">
+          <img className="make" src={rosto} alt="" />
         </div>
 
-        <div className="BannerDiv">
+        <div className="bannerDiv">
           <img src={tendencia} alt="" />
         </div>
 

@@ -2,13 +2,23 @@
 
   text-align: center;
   padding: 5rem 0;
-  
+
+
+
 }
 
 .tituloLancamentos {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 3rem;
+
+
+  @media (max-width: 720px) {
+    font-size: 1.2rem;
+    margin: 0;
+    padding-bottom: 2rem;
+
+  }
 }
 
 
@@ -18,29 +28,51 @@
   margin: 0 auto;
 
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   gap: 3rem;
+
+   @media (max-width: 720px){
+    flex-direction: column;
+    
+   }
+
 }
 
 .miniaturas {
-  width: 150px;   
+  width: 150px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+   @media (max-width: 420px){
+    display: none;
+   };
 }
 
 .cardLancamento {
- 
+
   background: white;
   padding: 2rem;
   border-radius: 10px;
   text-align: left;
+
+  @media (max-width: 420px){
+    padding-top: 0;
+    
+   };
 }
 
 .avaliacao {
   font-size: 1.2rem;
   margin-bottom: 5rem;
+
+  @media (max-width: 420px){
+    margin-bottom: 1rem;
+    
+   };
+
+    
 }
 
 .tituloProduto {
@@ -51,6 +83,8 @@
 .subtitulo {
   margin-top: 1rem;
   font-weight: 600;
+
+  
 }
 
 
@@ -69,10 +103,21 @@
     display: inline-block;
   }
 
-  .cor1 { background: #b2b0df; }
-  .cor2 { background: #d82820; }
-  .cor3 { background: #4b1416; }
-  .cor4 { background: #d78a6c; }
+  .cor1 {
+    background: #b2b0df;
+  }
+
+  .cor2 {
+    background: #d82820;
+  }
+
+  .cor3 {
+    background: #4b1416;
+  }
+
+  .cor4 {
+    background: #d78a6c;
+  }
 }
 
 .descricaoTitulo {

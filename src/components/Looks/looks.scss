@@ -1,37 +1,48 @@
 .sectionLooks {
   width: 100%;
   text-align: center;
-  padding: 2rem 0;
   
+
+  @media (max-width: 720px) {
+    padding: 0;
+  }
+
 }
 
 
 .h2Looks {
   font-size: 2rem;
   font-weight: 600;
-  margin: 2rem 0; 
+  margin: 2rem 0;
   text-align: center;
+
+  @media (max-width: 720px) {
+    font-size: 1.2rem;
+
+  }
 }
 
 .sectionBanners {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;         
-  flex-wrap: wrap;    
- 
-}
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  .bannerDiv {
 
 
-.BannerDiv {
+    .make {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+
     
-  display: flex;
-  justify-content: center;
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block;
   }
+
+
+
 }

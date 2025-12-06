@@ -1,14 +1,20 @@
-section{
+section {
     text-align: center;
 }
 
 
 
-.bannerosa{
-      width: 100vw;
-        max-height: 800px;
+.bannerosa {
+    width: 95%;
+    
 }
 
-.novidades{
+.novidades {
     padding: 2rem 0;
+    font-size: 2rem;
+
+    @media (max-width: 720px) {
+        font-size: 1.2rem;
+
+    }
 }

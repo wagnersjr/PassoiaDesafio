@@ -4,12 +4,12 @@
     overflow: hidden;
 
     img {
-        width: 100vw;
+         width: 100vw;
+        max-height: 800px;
+    }
 
-        object-fit: cover;
-
-
+    @media (max-width: 720px) {
+        width: auto;
         height: auto;
-        display: block;
     }
 }
